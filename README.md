@@ -26,11 +26,11 @@ As we live in a digital era, people nowadays cannot get away from technology tha
 </figure>
 <figure>
   <figcaption>Category screen</figcaption>
-<img src="categories.PNG" alt="Logo" width="300" height="500">
+<img src="categories.png" alt="Logo" width="300" height="500">
 </figure>
 <figure>
   <figcaption>Enroll course screen</figcaption>
-<img src="enroll.PNG" alt="Logo" width="300" height="500">
+<img src="enroll.png" alt="Logo" width="300" height="500">
 </figure>
 <figure>
   <figcaption>Instuctor Homepage</figcaption>
