@@ -22,11 +22,11 @@ As we live in a digital era, people nowadays cannot get away from technology tha
 ### Screens
 <figure>
   <figcaption>Student Homepage</figcaption>
-<img src="homepage.PNG" alt="Logo" width="300" height="500">
+<img src="student_homepage.PNG" alt="Logo" width="300" height="500">
 </figure>
 <figure>
   <figcaption>Category screen</figcaption>
-<img src="ccc.PNG" alt="Logo" width="300" height="500">
+<img src="categories.PNG" alt="Logo" width="300" height="500">
 </figure>
 <figure>
   <figcaption>Enroll course screen</figcaption>
@@ -34,7 +34,7 @@ As we live in a digital era, people nowadays cannot get away from technology tha
 </figure>
 <figure>
   <figcaption>Instuctor Homepage</figcaption>
-<img src="kk.PNG" alt="Logo" width="300" height="500">
+<img src="instructor_homepage.PNG" alt="Logo" width="300" height="500">
 </figure>
 
 
