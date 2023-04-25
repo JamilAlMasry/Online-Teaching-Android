@@ -41,10 +41,11 @@ As we live in a digital era, people nowadays cannot get away from technology tha
 
 ### Technical environment used
 
-* PHP
+* Conection between Database and Application: PHP and JSON
 * Database: MYSQL
-* Android programming: Java
-* Xampp
+* Frontend: XML
+* Backend: Java
+* Server: Wamp
 
 
 
