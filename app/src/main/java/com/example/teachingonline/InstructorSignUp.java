@@ -70,7 +70,7 @@ public class InstructorSignUp extends AppCompatActivity {
                             data[0] = fullname;
                             data[1] = password;
                             data[2] = email;
-                            PutData putData = new PutData("https://192.168.1.104/OnlineT/instructor.php", "POST", field, data);
+                            PutData putData = new PutData("http://192.168.1.11/Onlineteaching/instructor.php", "POST", field, data);
                             if (putData.startPut()) {
                                 HttpsTrustManager.allowAllSSL();
                                 if (putData.onComplete()) {
@@ -78,11 +78,12 @@ public class InstructorSignUp extends AppCompatActivity {
                                     if(result.equals("Sign Up Success")){
                                         Toast.makeText(getApplicationContext(), result, Toast.LENGTH_SHORT).show();
                                         Intent intent = new Intent(getApplicationContext(), Login.class);
+                                        startActivity(intent);
                                         finish();
                                     }else {
                                         Toast.makeText(getApplicationContext(), result, Toast.LENGTH_LONG).show();
                                     }
-                                    Log.i("PutData", result);
+                                  //  Log.i("PutData", result);
                                 }
                             }
                         }

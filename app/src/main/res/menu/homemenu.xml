@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/manageCourseMenu"
+        android:title="Manage Profile"
+        android:icon="@drawable/ic_settings"
+        app:showAsAction="ifRoom">
+        <menu>
+            <item
+                android:id="@+id/editProfileMenu"
+                android:title="Edit Profile"/>
+            <item
+                android:id="@+id/viewCoursesMenu"
+                android:title="Enrolled Courses"/>
+            <item
+                android:id="@+id/paymentDetailMenu"
+                android:title="Payments History"/>
+
+
+        </menu>
+    </item>
+</menu>

@@ -12,4 +12,5 @@
     <color name="Vgreen">#34A0A4</color>
     <color name="Mblue">#168AAD</color>
     <color name="Cblue">#1A759F</color>
+    <color name="gradientOrange">#ff6200</color>
 </resources>

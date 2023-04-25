@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Lecture"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Lecture Details"
+        android:textColor="@color/Mblue"
+        android:fontFamily="@font/poppinsbold"
+        android:textSize="18sp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Section Name"
+        android:textColorHint="@color/Mblue"
+        app:boxStrokeColor="@color/ocean_green"
+        app:counterOverflowTextColor="@color/Mblue">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/sectionName"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Lecture Name"
+        android:textColorHint="@color/Mblue"
+        app:boxStrokeColor="@color/ocean_green"
+        app:counterOverflowTextColor="@color/Mblue">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/lectureName"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Lecture Duration (follow the order 00:00:00)"
+        android:textColorHint="@color/Mblue"
+        app:boxStrokeColor="@color/ocean_green"
+        app:counterOverflowTextColor="@color/Mblue">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nameEnroll"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/Mblue"
+        android:text="Upload Lecture Video"
+        android:fontFamily="@font/poppinsmedium"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Lecture Details"
+        android:textColor="@color/Mblue"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppinsbold"
+        android:textSize="18sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Spinner
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerLecture"/>
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/Mblue"
+            android:text="Get Data"
+            android:layout_marginLeft="40dp"/>
+
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lectureList">
+
+    </ListView>
+
+</LinearLayout>

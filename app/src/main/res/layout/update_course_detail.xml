@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Course Details"
+        android:textColor="@color/Mblue"
+        android:fontFamily="@font/poppinsbold"
+        android:textSize="18sp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Course Name"
+        android:textColorHint="@color/Mblue"
+        app:boxStrokeColor="@color/ocean_green"
+        app:counterOverflowTextColor="@color/Mblue">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/crsUpdateName"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Course Description"
+        android:textColorHint="@color/Cblue"
+        app:boxStrokeColor="@color/ocean_green"
+        app:counterOverflowTextColor="@color/Cblue">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/courseDescUpd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsmedium"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Course Requirements"
+        android:textColorHint="@color/Cblue"
+        app:boxStrokeColor="@color/ocean_green"
+        app:counterOverflowTextColor="@color/Cblue">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/courseReqUpd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsmedium"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Course Price"
+        android:textColorHint="@color/Cblue"
+        app:boxStrokeColor="@color/ocean_green"
+        app:counterOverflowTextColor="@color/Cblue">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/courseUdpPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsmedium"
+            android:inputType="number" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/categorySpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp" />
+
+    <Spinner
+        android:id="@+id/languageSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/Mblue"
+        android:text="Save"
+        android:id="@+id/saveCrs"
+        android:fontFamily="@font/poppinsmedium"/>
+
+</LinearLayout>

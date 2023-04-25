@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:text="category"
+        android:layout_margin="5dp"
+        android:fontFamily="@font/poppinsbold"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@drawable/coursecolor"
+        android:layout_marginLeft="10dp"
+        />
+
+</LinearLayout>

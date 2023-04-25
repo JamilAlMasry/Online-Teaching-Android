@@ -3,19 +3,30 @@
     package="com.example.teachingonline">
 
     <uses-permission android:name="android.permission.INTERNET" />
-
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="A1 Course"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TeachingOnline"
         android:usesCleartextTraffic="true">
 
         <activity android:name=".Home"/>
-
+        <activity android:name=".category_course"/>
         <activity android:name=".Dashboard" />
+        <activity android:name=".AllCategories"/>
+        <activity android:name=".CreateCourse"/>
+        <activity android:name=".EditInstProfile"/>
+        <activity android:name=".course_data"/>
+        <activity android:name=".EnrollCourse"/>
+        <activity android:name=".course_content"/>
+        <activity android:name=".manage_course"/>
+        <activity android:name=".view_payment_history"/>
+        <activity android:name=".view_enrolled_courses"/>
+        <activity android:name=".edit_student_profile"/>
+        <activity android:name=".Lecture"/>
 
         <activity android:name=".InstructorSignUp" android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             />
@@ -36,5 +47,8 @@
 
         <activity android:name=".MainActivity" />
     </application>
+    <meta-data
+        android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+        android:value="true"/>
 
 </manifest>

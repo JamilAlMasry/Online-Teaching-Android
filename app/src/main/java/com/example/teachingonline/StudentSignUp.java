@@ -11,7 +11,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.google.android.material.textfield.TextInputEditText;
 import com.vishnusivadas.advanced_httpurlconnection.PutData;
 
@@ -70,7 +69,7 @@ public class StudentSignUp extends AppCompatActivity {
                             data[0] = fullname;
                             data[1] = password;
                             data[2] = email;
-                            PutData putData = new PutData("https://192.168.1.104/OnlineT/student.php", "POST", field, data);
+                            PutData putData = new PutData("http://192.168.1.11/Onlineteaching/student.php", "POST", field, data);
                             if (putData.startPut()) {
                                 if (putData.onComplete()) {
                                     String result = putData.getResult();

@@ -14,7 +14,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppinsmedium"
-            android:text="Welcome back!"
+            android:text="Welcome !"
             android:textColor="@color/keppel"
             android:textSize="20sp" />
 
@@ -23,19 +23,19 @@
             android:id="@+id/instructorName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/black"
+            android:layout_below="@+id/welcome"
             android:fontFamily="@font/poppinsbold"
             android:text="instructor"
-            android:textSize="27sp"
-            android:layout_below="@+id/welcome"/>
+            android:textColor="@color/black"
+            android:textSize="27sp" />
 
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:layout_marginRight="5dp"
             android:layout_alignParentRight="true"
             android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
             app:srcCompat="@drawable/hand" />
 
         <LinearLayout
@@ -87,12 +87,12 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/detailsLayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/coursesLayout"
             android:layout_marginRight="0dp"
-            android:orientation="horizontal"
-            android:id="@+id/detailsLayout">
+            android:orientation="horizontal">
 
                 <Button
                     android:id="@+id/enrolledStudentsButton"
@@ -140,19 +140,20 @@
             android:orientation="vertical"
                 >
                 <Button
+                    style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
-                    app:cornerRadius="10dp"
-                    style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
                     android:backgroundTint="#1E6091"
+                    android:fontFamily="@font/poppinsbold"
+                    android:onClick="editprofile"
                     android:text="Manage Profile"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:cornerRadius="10dp"
                     app:icon="@drawable/person_24"
-                    app:iconTint="@color/white"
                     app:iconGravity="textTop"
                     app:iconPadding="10dp"
-                    android:fontFamily="@font/poppinsbold"
-                    android:textColor="@color/white"
-                    android:textSize="20sp"/>
+                    app:iconTint="@color/white" />
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
@@ -164,11 +165,6 @@
                     android:textSize="20sp"/>
 
         </LinearLayout>
-
-
-
-
-
 
 
 
